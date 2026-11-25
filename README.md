@@ -2,9 +2,18 @@
 
 Site público com as regras da cidade organizadas por categoria. O conteúdo foi estruturado a partir do documento de regras fornecido pelo responsável do Distrito 011.
 
-## Publicação local/VPS
+## Publicar no Render
 
-Abra `index.html` em um navegador ou sirva esta pasta com qualquer servidor estático. O site usa somente arquivos locais e não precisa de build ou dependências.
+Crie um serviço **Static Site** no Render e conecte este repositório. Configure:
+
+- **Branch:** `main`
+- **Root Directory:** deixe vazio
+- **Build Command:** deixe vazio
+- **Publish Directory:** `.`
+
+Não use **Web Service** nem Docker para esta publicação. O site é composto por HTML, JavaScript, CSS e imagens; não precisa de instalação nem etapa de build. Se a tela pedir um `Dockerfile`, volte e crie um **Static Site**.
+
+Para executar localmente ou em uma VPS, sirva esta pasta com qualquer servidor de arquivos estáticos.
 
 ## GitHub Pages
 
